@@ -10,9 +10,14 @@ public class Main {
         for (int i = 0; i < array.length; i++) {
             array[i] = 1 + (int) (Math.random() * ((5 - 1) + 1));
         }
-        for (Integer i : array) {
-            System.out.println(i);
-        }
+        System.out.println(algorithm(array));
+    }
+
+    public static int algorithm(int[] array) {
+        int result = 0, temp, a, b, c;
+
+
+        return result;
     }
 
 }
