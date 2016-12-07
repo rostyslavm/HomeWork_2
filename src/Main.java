@@ -12,10 +12,10 @@ public class Main {
         for (int i = 0; i < array.length; i++) {
             array[i] = 1 + (int) (Math.random() * ((10 - 1) + 1));
         }
-        System.out.println(algorithm(array));
+        algorithm(array);
     }
 
-    public static int algorithm(int[] array) {
+    public static void algorithm(int[] array) {
 
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array.length - 1; j++) {
