@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Main {
 
     /*
@@ -8,16 +10,21 @@ public class Main {
     public static void main(String[] args) {
         int[] array = new int[3];
         for (int i = 0; i < array.length; i++) {
-            array[i] = 1 + (int) (Math.random() * ((5 - 1) + 1));
+            array[i] = 1 + (int) (Math.random() * ((10 - 1) + 1));
         }
         System.out.println(algorithm(array));
     }
 
     public static int algorithm(int[] array) {
-        int result = 0, temp, a, b, c;
 
-
-        return result;
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array.length - 1; j++) {
+                System.out.println(Arrays.toString(array));
+                int tmp = array[j];
+                array[j] = array[j + 1];
+                array[j + 1] = tmp;
+            }
+        }
     }
 
 }
